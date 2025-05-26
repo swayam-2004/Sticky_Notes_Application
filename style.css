@@ -1,0 +1,92 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: linear-gradient(to right,rgb(242,112,156),rgb(255,148,114));
+
+}
+
+#main
+{
+    min-height: 100vh;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#addBtn
+{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    background-color: forestgreen;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addBtn:hover
+{
+    background-color: rgb(75, 196, 75);
+}
+
+.note
+{
+    background-color: transparent;
+    margin: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.tool
+{
+  background-color: black;
+  color: white;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tool i{
+    padding: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.tool i:hover
+{
+    color: rgb(221, 212, 212);
+}
+
+.note textarea{
+    width: 300px;
+    border: none;
+    min-height: 220px;
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    color:white;
+    overflow: hidden;
+    background-color: rgb(44, 43, 43);
+    border-radius: 0px 0px 10px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.note textarea:hover
+{
+    background-color: rgb(9, 29, 9);
+}
+
+.note textarea:focus
+{
+    outline: none;
+}
